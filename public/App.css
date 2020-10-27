@@ -1,0 +1,38 @@
+.App {
+  margin: 36px;
+  text-align: center;
+}
+
+.SearchForm-Wrapper {
+  display: flex;
+  justify-content: center;
+}
+.credits {
+  display: flex;
+  justify-content: center;
+  margin: 0 35%;
+  min-width: 500px;
+}
+.MoviesList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 16px;
+}
+.MoviesList-item {
+  margin-bottom: 24px;
+  width: 28%;
+}
+
+@media only screen and (max-width: 800px) {
+  .credits {
+    display: flex;
+    justify-content: center;
+    max-width: 500px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .credits {
+    max-width: 300px;
+  }
+}
