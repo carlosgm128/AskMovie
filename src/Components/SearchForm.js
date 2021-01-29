@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-const API_KEY = "5342a66b";
+const API_KEY = "YOUR-API-KEY";
 
 export class SearchForm extends Component {
   state = {
