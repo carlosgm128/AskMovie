@@ -1,23 +1,33 @@
 import React, { Component } from "react";
 import { Movie } from "./Movie";
+import styled from 'styled-components'
+
+const ContainerWrapper = styled.div`
+`;
+const CardWrapper = styled.div`
+  display:grid;
+  place-items:center;
+  
+`;
+
 
 export class MovieList extends Component {
+
   render() {
     const { Movies } = this.props;
-
     return (
-      <div className="MoviesList">
+      <ContainerWrapper className="MoviesList">
         {Movies.map((movie) => (
-          <div key={movie.imdbID} className="MoviesList-item">
+          <CardWrapper key={movie.imdbID} className="MoviesList-item">
             <Movie
               id={movie.imdbID}
               Title={movie.Title}
               Poster={movie.Poster}
               Year={movie.Year}
             />
-          </div>
+          </CardWrapper>
         ))}
-      </div>
+      </ContainerWrapper>
     );
   }
 }

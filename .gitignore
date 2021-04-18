@@ -1,0 +1,11 @@
+#folders ignore start
+#node modules 
+/node_modules
+
+
+#folders ignore end
+
+#files ignore start
+*.png
+.DS_store
+#files ignore end
