@@ -8,4 +8,5 @@
 #files ignore start
 *.png
 .DS_store
+src/API_KEY.js
 #files ignore end
